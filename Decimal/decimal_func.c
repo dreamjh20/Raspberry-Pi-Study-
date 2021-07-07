@@ -13,11 +13,20 @@ float Decimal(float num)
 		{
 			num--;
 		}
-	down_decimal = num + 1;
 	}	
-	/*else if(num < 0)
+	else if(num < 0)
 	{
-
-	}*/
+		printf("이개하");
+		num *= -1;
+		while(num > 0)
+		{
+			num--;
+		}
+	}
+	else
+	{
+		return num;
+	}
+	down_decimal = num + 1;
 	return down_decimal;
 }
