@@ -7,26 +7,34 @@ float Decimal(float num)
 	
 	if(num > 1)
 	{
-		printf("나는 개하");
+		//printf("나는 개하");
 
 		while(num > 0)
 		{
 			num--;
 		}
+	down_decimal = num + 1;
 	}	
 	else if(num < 0)
 	{
-		printf("이개하");
+		//printf("이개하");
 		num *= -1;
 		while(num > 0)
 		{
 			num--;
 		}
+	down_decimal = num + 1;
 	}
 	else
 	{
-		return num;
+		//printf("개하개하\n");
+		
+		down_decimal = num;
 	}
-	down_decimal = num + 1;
+	if(down_decimal >= 1)
+	{
+		down_decimal--;
+	}
+		
 	return down_decimal;
 }
