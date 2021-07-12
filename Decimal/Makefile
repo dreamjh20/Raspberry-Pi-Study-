@@ -1,4 +1,4 @@
-moon : main.o decimal_func.o
+moon : main.o decimal_func.o 
 	gcc -o moon main.o decimal_func.o
 	
 main.o : main.c decimal.h
